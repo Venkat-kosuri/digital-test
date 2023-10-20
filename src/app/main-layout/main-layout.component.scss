@@ -1,0 +1,385 @@
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
+
+* {
+  box-sizing: border-box;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  margin: 20px 0;
+}
+
+.background-section,
+.appointment-section {
+  overflow: hidden; 
+  height: 80vh;
+}
+
+.appointment-section {
+  padding: 20px 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.slide-content::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-content {
+  background-image: url("../../assets/images/why-us-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  z-index: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 80vh;
+}
+
+.slide-inner {
+  padding: 20px 40px;
+  border-radius: 10px;
+  color: #fff;
+  position: relative;
+}
+
+.slide-para {
+  line-height: 1.5;
+  color: #fff;
+  font-size: 20px;
+}
+
+
+.slide-heading {
+  font-size: 3rem;
+
+  font-weight: bold;
+  color: #fff;
+  margin: 0; 
+}
+
+.slide-title {
+  font-size: 2.5rem;
+
+  font-weight: bold;
+  color: #1ba772;
+  margin: 10px 0; 
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form-group {
+  margin: 10px; 
+  width: calc(
+    50% - 30px
+  ); 
+}
+
+.full-width {
+  margin: 10px; 
+  width: calc(
+    100% - 20px
+  ); 
+}
+
+.input {
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  background-color: #efefef;
+  font-family: "Roboto", sans-serif !important;
+
+}
+
+label {
+  font-weight: normal;
+  color: #b1b1b1;
+  font-size: 16px !important;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  background-color: #efefef;
+  margin: 5px 0;
+}
+
+.input-icon {
+  position: relative;
+}
+
+.input-icon input {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #efefef;
+  width: 100%;
+}
+
+.input-icon i {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 16px;
+  color: #aaa;
+}
+
+.input-icon input::placeholder {
+  padding-left: 30px;
+  color: #b9b9b9;
+  font-family: "Roboto", sans-serif !important;
+}
+
+
+.rounded-input {
+  border: none;
+  border-radius: 20px;
+}
+
+.booking-header {
+  text-align: center;
+  font-size: 2rem;
+
+  font-weight: bold;
+  color: #1ba772;
+}
+
+.booking-section {
+  text-align: center;
+}
+
+.book-now-button-container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.book-now-button {
+  background-color: #1ba772;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+
+  font-weight: bold;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s;
+}
+.book-now-button-transparant {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  border: 2px solid #1ba772;
+  padding: 10px 20px;
+  cursor: pointer;
+
+  font-weight: bold;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s;
+  margin-left: 10px;
+}
+
+.book-now-button i {
+  margin-left: 10px;
+  transition: margin-left 0.3s;
+  color: #1ba772;
+  background-color: #fff;
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.book-now-button-transparant i {
+  margin-left: 10px;
+  transition: margin-left 0.3s;
+  color: #1ba772;
+  background-color: #fff;
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.book-now-button:hover {
+  background-color: #fff;
+  color: #1ba772;
+  border: 2px solid #1ba772;
+}
+
+.book-now-button-transparant:hover {
+  background-color: #1ba772;
+  color: #fff;
+}
+
+.book-now-button:hover i {
+  margin-left: 15px;
+  color: #fff;
+  background-color: #1ba772;
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.book-now-button-transparant:hover i {
+  margin-left: 15px;
+}
+
+input::placeholder {
+  padding-left: 20px;
+
+  font-style: italic;
+  font-size: 12px !important;
+  color: #b9b9b9;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    grid-template-columns: 1fr; 
+    height: auto; 
+    flex-direction: column;
+  }
+
+  .background-section,
+  .appointment-section {
+    padding: 20px;
+    height: auto;
+  }
+
+  .appointment-section {
+    padding: 10px;
+  }
+
+  .background-section {
+    padding: 0px;
+    width: 100%;
+  }
+  .flex-container {
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  .form-group,
+  .full-width {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .input-icon input,
+  .rounded-input {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .slide-inner {
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: #fff;
+  }
+
+  .slide-para {
+    line-height: 1.5;
+    color: #fff;
+    font-size: 14pxpx;
+  }
+
+ 
+  .slide-heading {
+    font-size: 2rem;
+
+    font-weight: bold;
+    color: #fff;
+    margin: 0; 
+  }
+
+  .slide-title {
+    font-size: 1.5rem;
+
+    font-weight: bold;
+    color: #1ba772;
+    margin: 10px 0; 
+  }
+
+  .booking-header {
+    margin: 5px 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .appointment-section {
+    padding: 5px !important;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .slide-content {
+    width: 100vw;
+  }
+  .slide-inner {
+    padding: 10px 10px;
+    border-radius: 10px;
+    color: #fff;
+  }
+
+  .slide-para {
+    line-height: 1.5;
+    color: #fff;
+    font-size: 14px;
+  }
+
+ 
+  .slide-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 0; 
+  }
+
+  .slide-title {
+    font-size: 2rem;
+
+    font-weight: bold;
+    color: #1ba772;
+    margin: 10px 0; 
+  }
+
+  .booking-header {
+    margin: 5px 0px;
+  }
+  .slide-buttons {
+    display: flex;
+  }
+  .book-now-button-transparant {
+    display: flex;
+  }
+}

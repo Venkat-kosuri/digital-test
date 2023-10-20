@@ -1,0 +1,41 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+  background-color: #ebfbf2;
+
+  .sidebar {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .layout {
+    flex: 1;
+    display: block;
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  @media screen and (min-width: 1300px) {
+    .layout {
+      flex: 1;
+      display: block;
+      flex-direction: column;
+      padding: 30px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .layout {
+    flex: 1;
+    display: block;
+    flex-direction: column;
+    padding: 0px !important;
+  }
+  .app-container {
+    display: flex;
+    height: auto !important;
+    background-color: #ebfbf2;
+  }
+}

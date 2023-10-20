@@ -1,0 +1,50 @@
+<nav class="navbar">
+  <!-- Mobile view -->
+  <a *ngIf="isMobile" routerLink="/home" class="home-icon">
+    <i class="fas fa-home"></i>
+  </a>
+  <a *ngIf="isMobile && !menuActive" (click)="toggleMenu()" class="hamburger-icon">
+    <i class="fas fa-bars"></i>
+  </a>
+
+  <!-- Desktop View Links -->
+  <div *ngIf="!isMobile">
+    <a routerLink="/home">Home</a>
+    <a routerLink="/services">Services</a>
+    <a routerLink="/about-us">About Us</a>
+    <a routerLink="/appointment">Appointment</a>
+    <a routerLink="/contact">Contact</a>
+    <a href="tel:+1234567890" class="phone-link">
+      <i class="fas fa-phone-alt"></i>
+      <span class="phone-number">+123 456 7890</span>
+    </a>
+  </div>
+
+  <!-- Mobile Menu Modal -->
+  <div *ngIf="isMobile && menuActive" class="modal-container active">
+    <div class="overlay" (click)="toggleMenu()"></div>
+    <div class="menu-modal">
+      <button class="close-btn" (click)="toggleMenu()">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="menu-items">
+        <a routerLink="/home">Home</a>
+        <a routerLink="/services">Services</a>
+        <a routerLink="/about-us">About Us</a>
+        <a routerLink="/appointment">Appointment</a>
+        <a routerLink="/contact">Contact</a>
+        <a href="tel:+1234567890" class="phone-link">
+          <i class="fas fa-phone-alt"></i>
+          <span class="phone-number">+123 456 7890</span>
+        </a>
+        <div class="social-icons-group">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+      </div>
+      </div>
+     
+    </div>
+  </div>
+</nav>

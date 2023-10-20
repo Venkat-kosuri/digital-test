@@ -1,0 +1,170 @@
+<div class="main-content">
+  <div class="background-section">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide>
+        <div class="slide-content">
+          <div class="slide-inner">
+            <h1 class="slide-heading">Transforming Smiles, <br /></h1>
+            <span class="slide-title">Dental Health</span>
+            <p class="slide-para">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Our
+              dedicated team is committed to transforming smiles and improving
+              dental health, one tooth at a time. With state-of-the-art
+              technology and a gentle touch, we provide comprehensive dental
+              care for all your needs.
+            </p>
+            <div class="slide-buttons">
+              <button type="submit" class="book-now-button">
+                Book Now
+                <i class="fas fa-play"></i>
+              </button>
+              <button type="submit" class="book-now-button-transparant">
+                Book Now
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="slide-content">
+          <div class="slide-inner">
+            <h1 class="slide-heading">Your Smile, Our Priority</h1>
+            <span class="slide-title">Dental Health</span>
+            <p class="slide-para">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
+              Dental Health, your smile is our top priority. Our experienced
+              team is dedicated to providing you with the best dental care in a
+              comfortable and friendly environment. We are here to make your
+              dental health a priority.
+            </p>
+            <div class="slide-buttons">
+              <button type="submit" class="book-now-button">
+                Book Now
+                <i class="fas fa-play"></i>
+              </button>
+              <button type="submit" class="book-now-button-transparant">
+                Book Now
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="slide-content">
+          <div class="slide-inner">
+            <h1 class="slide-heading">Experience Pain-Free</h1>
+            <span class="slide-title">Dental Health</span>
+            <p class="slide-para">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Our
+              mission is to provide you with pain-free dentistry. We understand
+              that dental visits can be intimidating, but our caring team
+              ensures a comfortable experience. Say goodbye to dental anxiety
+              and hello to a healthy, beautiful smile.
+            </p>
+            <div class="slide-buttons">
+              <button type="submit" class="book-now-button">
+                Book Now
+                <i class="fas fa-play"></i>
+              </button>
+              <button type="submit" class="book-now-button-transparant">
+                Book Now
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+
+  <div class="appointment-section">
+    <h2 class="booking-header">Book an Appointment</h2>
+    <form>
+      <div class="flex-container">
+        <div class="form-group">
+          <label for="firstName" class="roboto-label"> First Name : </label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            placeholder="Your First Name *"
+            required
+            class="rounded-input "
+          />
+        </div>
+        <div class="form-group">
+          <label for="lastName" class="roboto-label"> Last Name: </label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            placeholder="Your Last Name *"
+            required
+            class="rounded-input "
+          />
+        </div>
+      </div>
+      <div class="full-width">
+        <label for="email" class="roboto-label">Email: </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email Address *"
+          required
+          class="rounded-input "
+        />
+      </div>
+      <div class="full-width">
+        <label for="contactNumber" class="roboto-label">Contact Number: </label>
+        <input
+          type="tel"
+          id="contactNumber"
+          name="contactNumber"
+          placeholder="Your Contact No"
+          required
+          class="rounded-input "
+        />
+      </div>
+      <div class="flex-container">
+        <div class="form-group">
+          <label for="changeAppointment" class="roboto-label">Date: </label>
+          <div class="input-icon">
+            <i class="fas fa-calendar-alt"></i>
+            <input
+              type="text"
+              id="changeAppointment"
+              name="changeAppointment"
+              required
+              placeholder="Appointment Date *"
+              class="rounded-input "
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="appointmentTime" class="roboto-label"> Time: </label>
+          <div class="input-icon">
+            <i class="fas fa-clock"></i>
+            <input
+              type="text"
+              id="appointmentTime"
+              name="appointmentTime"
+              required
+              placeholder="Appointment Time *"
+              class="rounded-input "
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="book-now-button-container">
+        <button type="submit" class="book-now-button">
+          Book Now
+          <i class="fas fa-play"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
