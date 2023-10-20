@@ -18,7 +18,7 @@
 }
 
 .appointment-section {
-  padding: 20px 10px;
+  padding: 20px 40px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background: #fff;
 }
@@ -336,7 +336,7 @@ input::placeholder {
 
 @media screen and (min-width: 1200px) and (max-width: 1500px) {
   .appointment-section {
-    padding: 5px !important;
+    padding: 25px !important;
   }
 
 }
@@ -382,4 +382,48 @@ input::placeholder {
   .book-now-button-transparant {
     display: flex;
   }
+  .background-section,
+.appointment-section {
+  overflow: hidden; 
+  height: 100vh;
 }
+
+.slide-content {
+  background-image: url("../../assets/images/why-us-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  z-index: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100vh;
+  padding: 0px 10px;
+}
+
+}
+
+
+.book-now-button i, .book-now-button-transparant i {
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center; 
+  margin-left: 10px;
+  transition: margin-left 0.3s;
+  color: #1ba772;
+  background-color: #fff;
+  padding: 6px;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px; 
+}
+
+.slide-content {
+  background-image: url("../../assets/images/why-us-bg.jpg");
+  background-repeat: no-repeat; 
+  background-position: center center; 
+  background-size: cover; 
+}
+
